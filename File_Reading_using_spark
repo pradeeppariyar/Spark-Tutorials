@@ -1,0 +1,26 @@
+Spark for csv files
+
+Val spark=SparkSession.builder()
+.setMaster(“Local”)
+.setAppName(“creating RDD with CSV files”)
+.master(“local”)
+.getorCreate()
+
+#Resourcesfollder
+Datasets
+.csv
+Val csvRDD= spark.sparkContext.textFile(“.csv file” ,2 )
+// println(csvRDD.count)
+//csvRDD.take(10).eachline(println)
+
+//val header =csvRDD.first()
+//Val csvRDDwithheader=csvRDD.filter(.contains(header))
+Val csvRDDwithheader=csvRDD.filter(_ !=header)
+csvRDDwithoutheader.take(10).foreach(println)
+Val csvArray=csvRDDwithoutheader.map(line -> line.split(“,”)(0))
+Val colArray=line.split(“,”)
+
+(colArray(colArray(o) , colArray(1) , colArray(17)).take(10).foreach(println)
+
+
+(colArray(colArray(o) , colArray(1) , colArray(17)).take(10).foreach(println)
