@@ -1,0 +1,22 @@
+# This step is common for all spark
+
+Val spark=SparkSession.builder()
+.setMaster(“Local”)
+.setAppName(“creating RDD with CSV files”)
+.master(“local”)
+.getorCreate()
+
+# This is second Step.
+
+Spark DataFrame spark context
+val sparkConf =new SparkConf()
+Val sc =new SparkContext(sparkConf)
+Val sqlContext=new sqlContext(sc)
+Val rdd=sc.parallelize(Array(1,2 ,3,4,5))
+Val schema =StructType(
+StructField(“Number” , IntegerType , false) : : NIL)
+
+val rowRDD =rdd.map(line => Row(line))
+val df =sqlContext.createDataFrame(rowRDD ,schema)
+df.printSchema()
+df.show()
