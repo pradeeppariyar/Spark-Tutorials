@@ -1,0 +1,23 @@
+# DataFrame with spark
+
+Val spark=SparkSession.builder()
+.setMaster(“Local”)
+.setAppName(“creating RDD with CSV files”)
+.master(“local”)
+.getorCreate()
+
+def main(args: Array[String]) : Unit= {  
+Val spark =SparkSession.builder()
+.appName(“Creating of using Session”)
+.master(“local”)
+.getOrCreate()
+
+Val rdd=spark.sparkContext.parallelize(Array(“1”,”2”,”3”,”4”,”5”))
+Val schema= StructType(
+Structfield(“Integer as  String” , StringType , true) ::Nil
+)
+Val rowRDD=rdd.map(element =>Row(element))
+Val df=spark.createDataFrame(roeRDD ,schema)
+Df.printSchema()
+Df.show()
+}
