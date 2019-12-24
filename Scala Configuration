@@ -1,0 +1,41 @@
+# Scala Setup By using Intelli IDE
+Check Below Link and configure Accordingly.
+
+https://www.youtube.com/watch?v=A2c4mDDn-QM&t=605s
+
+# # Scala Setup By using Eclipse Scala IDE
+Check Below Link and configure Accordingly.
+
+http://scala-ide.org/
+
+# setup Scala By Scala files
+https://spark.apache.org/downloads.html
+ Follow the Below procedure
+ 1. after download check the spark download folder
+ 2. open command prompt => type ls -ltr
+ 3. by using cd command enter the bin folder. like cd Bin => /Users/pradeep/Desktop/spark-3.0.0-preview-bin-hadoop2.7/bin
+ 4. type ls command and check spark-shell
+ 5. ./spark-shell
+(base) pradeeps-MacBook-Air:bin pradeep$ ./spark-shell
+19/09/22 01:50:24 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark context Web UI available at http://192.168.1.5:4040
+Spark context available as 'sc' (master = local[*], app id = local-1569097244448).
+Spark session available as 'spark'.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.4.4
+      /_/
+         
+Using Scala version 2.11.12 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_211)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> Continue Your Programming Language
+
+
+
